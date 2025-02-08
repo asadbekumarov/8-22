@@ -14,7 +14,6 @@ function Home() {
   // }
   return (
     <div>
-      {/* <Navbar /> */}
       <Main />
     </div>
   );
