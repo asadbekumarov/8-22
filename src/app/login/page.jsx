@@ -41,32 +41,35 @@ function Login() {
             Sign Into Your Account
           </p>
         </div>
-      <div>
-      <form
-          action=""
-          onSubmit={onSubmits}
-          className="flex flex-col gap-3 pt-10 items-start"
-        >
-          <input
-            className="py-2 px-3 w-[1200px] border"
-            type="text"
-            placeholder="Email Address"
-          />
-          <input
-            className="py-2 px-3 w-[1200px] border"
-            type="password"
-            placeholder="Password"
-          />
-          <button className="bg-[#17a2b8] py-2 px-4 text-white" type="submit">
-            Login
-          </button>
-          <p className="text-base leading-6 pt-5">
-            Don't have an account?
-            <span className="text-[#17a2b8] text-base leading-6">Sign Up</span>
-          </p>
-        </form>
+        <div>
+          <form
+            action=""
+            onSubmit={onSubmits}
+            className="flex flex-col gap-3 pt-10 items-start"
+          >
+            <input
+              className="py-2 px-3 w-[1200px] border"
+              type="text"
+              placeholder="Email Address"
+            />
+            <input
+              className="py-2 px-3 w-[1200px] border"
+              type="password"
+              placeholder="Password"
+            />
+            <button className="bg-[#17a2b8] py-2 px-4 text-white" type="submit">
+              Login
+            </button>
+            <p className="text-base leading-6 pt-5">
+              Don't have an account?
+              <span className="text-[#17a2b8] text-base leading-6">
+                Sign Up
+              </span>
+            </p>
+          </form>
+        </div>
       </div>
-      </div>
+      <div></div>
     </div>
   );
 }
