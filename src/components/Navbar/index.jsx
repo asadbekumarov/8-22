@@ -64,7 +64,9 @@ function Navbar() {
                   Posts
                 </Link>
                 <Link
-                  className={`${pathname === "/dashboard" ? "active" : ""}`}
+                  className={`${
+                    pathname === "/dashboard" ? "active" : ""
+                  }text-base leading-7 text-white font-semibold hover:text-[#17a2b8]`}
                   href={"/dashboard"}
                 >
                   Dashboard

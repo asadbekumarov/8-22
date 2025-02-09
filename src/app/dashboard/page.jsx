@@ -4,10 +4,9 @@ import { useRouter } from "next/navigation";
 import { IoPerson } from "react-icons/io5";
 import Link from "next/link";
 
-export default function Dashboard() {
+function Dashboard() {
   const [name, setName] = useState("Guest");
   const router = useRouter();
-
   useEffect(() => {
     setName(localStorage.getItem("userName") || "");
   }, []);
@@ -73,3 +72,4 @@ export default function Dashboard() {
     </div>
   );
 }
+export default Dashboard;

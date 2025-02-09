@@ -15,7 +15,6 @@ function Register() {
     let email = e.target.email.value;
     let password = e.target.password.value;
     let confirmPassword = e.target.confirmPassword.value;
-
     try {
       let res = await axios.post(`${baseUrl}/users`, {
         name,
@@ -24,6 +23,8 @@ function Register() {
       });
       if (res.status === 200) {
         localStorage.setItem("accessToken", res.data.token);
+        localStorage.setItem("authMethod", "register");
+
         localStorage.setItem("userName", name);
         route.push("/dashboard");
       }

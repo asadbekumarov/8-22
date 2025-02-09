@@ -19,6 +19,7 @@ function Login() {
       });
       if (res.status === 200) {
         localStorage.setItem("accessToken", res.data.token);
+        localStorage.setItem("authMethod", "login");
         route.push("/dashboard");
       }
       console.log(res);
@@ -48,11 +49,13 @@ function Login() {
             className="flex flex-col gap-3 pt-10 items-start"
           >
             <input
+              // name="email"
               className="py-2 px-3 w-[1200px] border"
               type="text"
               placeholder="Email Address"
             />
             <input
+              // name="password"
               className="py-2 px-3 w-[1200px] border"
               type="password"
               placeholder="Password"
