@@ -81,7 +81,7 @@ function Navbar() {
                 </button>
               </div>
             )}
-            <span></span>
+            <div></div>
           </div>
         </div>
       </div>
